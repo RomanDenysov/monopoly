@@ -1,9 +1,11 @@
 package com.sokima.monopoly.model.cell.business;
 
-import com.sokima.monopoly.model.cell.Cell;
 import com.sokima.monopoly.event.RentEvent;
+import com.sokima.monopoly.model.cell.Cell;
 import com.sokima.monopoly.model.player.Player;
+import lombok.Setter;
 
+@Setter
 public abstract class BusinessCell extends Cell {
 
     /**
@@ -25,6 +27,16 @@ public abstract class BusinessCell extends Cell {
      * rent event to execute
      */
     private RentEvent event;
+
+    /**
+     * identifier of businesses
+     */
+    private String businessName;
+
+    /**
+     * path to an icon
+     */
+    private String urlToImage;
 
     /**
      * @return the type of {@link BusinessCell} cell
