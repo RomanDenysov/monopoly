@@ -1,5 +1,6 @@
 package com.sokima.monopoly.event;
 
+import com.sokima.monopoly.event.exception.LoseGameException;
 import com.sokima.monopoly.event.exception.RentException;
 import com.sokima.monopoly.model.cell.Cell;
 import com.sokima.monopoly.model.cell.business.BusinessCell;
@@ -17,7 +18,7 @@ public class RentEvent implements Event {
      * @param onCell the {@link Cell} where player is staying
      */
     @Override
-    public void onEvent(Businessman player, Cell onCell) throws RentException {
+    public void onEvent(Businessman player, Cell onCell) throws RentException, LoseGameException {
         BusinessCell onBusinessCell = (BusinessCell) onCell;
         Player owner = onBusinessCell.getOwner();
 
@@ -34,8 +35,7 @@ public class RentEvent implements Event {
         long newBalance = currentBalance - rent;
 
         if(newBalance < 0) {
-            // TODO make custom exception LoseGameException
-            throw new RuntimeException("Balance is zero");
+            throw new LoseGameException();
         }
 
         player.setBalance(newBalance);
