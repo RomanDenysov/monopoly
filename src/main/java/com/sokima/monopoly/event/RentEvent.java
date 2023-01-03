@@ -22,11 +22,11 @@ public class RentEvent implements Event {
         BusinessCell onBusinessCell = (BusinessCell) onCell;
         Player owner = onBusinessCell.getOwner();
 
-        if(owner instanceof Bank) {
+        if (owner instanceof Bank) {
             throw new RentException("Owner is a bank.. Fail to take a rent.");
         }
 
-        if(owner.equals(player)) {
+        if (owner.equals(player)) {
             throw new RentException("Player is an owner.. Fail to take a rent.");
         }
 
@@ -34,7 +34,7 @@ public class RentEvent implements Event {
         Long currentBalance = player.getBalance();
         long newBalance = currentBalance - rent;
 
-        if(newBalance < 0) {
+        if (newBalance < 0) {
             throw new LoseGameException();
         }
 
