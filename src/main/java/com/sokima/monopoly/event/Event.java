@@ -1,7 +1,7 @@
 package com.sokima.monopoly.event;
 
-import com.sokima.monopoly.dto.deck.event.EventCell;
-import com.sokima.monopoly.dto.player.Businessman;
+import com.sokima.monopoly.model.deck.event.EventCell;
+import com.sokima.monopoly.model.player.Businessman;
 
 public interface Event {
 

@@ -1,8 +1,8 @@
-package com.sokima.monopoly.dto.deck.company;
+package com.sokima.monopoly.model.deck.company;
 
-import com.sokima.monopoly.dto.deck.Cell;
+import com.sokima.monopoly.model.deck.Cell;
 import com.sokima.monopoly.event.RentEvent;
-import com.sokima.monopoly.dto.player.Player;
+import com.sokima.monopoly.model.player.Player;
 
 public abstract class BusinessCell extends Cell {
 

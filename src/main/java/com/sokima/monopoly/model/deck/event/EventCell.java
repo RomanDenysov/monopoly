@@ -1,6 +1,6 @@
-package com.sokima.monopoly.dto.deck.event;
+package com.sokima.monopoly.model.deck.event;
 
-import com.sokima.monopoly.dto.deck.Cell;
+import com.sokima.monopoly.model.deck.Cell;
 import com.sokima.monopoly.event.Event;
 
 public abstract class EventCell extends Cell {

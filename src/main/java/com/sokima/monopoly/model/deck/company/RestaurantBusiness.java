@@ -1,4 +1,4 @@
-package com.sokima.monopoly.dto.deck.company;
+package com.sokima.monopoly.model.deck.company;
 
 public class RestaurantBusiness extends BusinessCell {
 

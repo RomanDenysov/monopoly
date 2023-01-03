@@ -1,4 +1,4 @@
-package com.sokima.monopoly.dto.player;
+package com.sokima.monopoly.model.player;
 
 public abstract class Player {
 
