@@ -1,4 +1,4 @@
-package com.sokima.monopoly.model.deck;
+package com.sokima.monopoly.model.cell;
 
 public abstract class Cell {
 

@@ -1,4 +1,4 @@
-package com.sokima.monopoly.model.deck.company;
+package com.sokima.monopoly.model.cell.business;
 
 public class PhoneBusiness extends BusinessCell {
 
