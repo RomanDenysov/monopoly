@@ -1,11 +1,30 @@
 package com.sokima.monopoly.model.player;
 
+import com.sokima.monopoly.model.cell.business.BusinessCell;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
+
+import java.util.List;
+
+@Getter
+@Setter
+@EqualsAndHashCode(of = {"name"})
 public abstract class Player {
 
-//    private String name;
-//
-//    private String balance;
-//
-//    private List<Business> businessInOwn;
+    /**
+     * unique name
+     */
+    private String name;
+
+    /**
+     * current user balance
+     */
+    private Long balance;
+
+    /**
+     * business cell in own
+     */
+    private List<BusinessCell> businessInOwn;
 
 }

@@ -1,8 +1,9 @@
 package com.sokima.monopoly.event;
 
+import com.sokima.monopoly.model.cell.Cell;
 import com.sokima.monopoly.model.player.Businessman;
 
-public class SalaryEvent implements Event{
+public class SalaryEvent implements Event {
 
     /**
      * pay a salary after a round
@@ -10,12 +11,12 @@ public class SalaryEvent implements Event{
      * @param player the {@link Businessman}
      */
     @Override
-    public void onEvent(Businessman player) {
+    public void onEvent(Businessman player, Cell onCell) {
 
     }
 
     @Override
-    public void printMessage() {
+    public void printMessage(Businessman player) {
 
     }
 }

@@ -3,8 +3,10 @@ package com.sokima.monopoly.model.cell.business;
 import com.sokima.monopoly.event.RentEvent;
 import com.sokima.monopoly.model.cell.Cell;
 import com.sokima.monopoly.model.player.Player;
+import lombok.Getter;
 import lombok.Setter;
 
+@Getter
 @Setter
 public abstract class BusinessCell extends Cell {
 
