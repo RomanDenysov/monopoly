@@ -5,7 +5,7 @@ import com.sokima.monopoly.model.dice.Dice;
 import java.util.List;
 
 /**
- * Util class for calculating next position on the desk
+ * Util class for calculating next position on the table
  */
 public final class PositionManipulator {
 
@@ -16,7 +16,7 @@ public final class PositionManipulator {
     /**
      * calculate next position number using {@link List<Dice>} values
      *
-     * @param currentPosition current position on desk
+     * @param currentPosition current position on table
      * @param dices the generated dices
      * @param numberOfCells cells count
      * @return next position number
