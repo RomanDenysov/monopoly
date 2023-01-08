@@ -7,8 +7,15 @@ import com.sokima.monopoly.model.cell.business.BusinessCell;
 import com.sokima.monopoly.model.player.Bank;
 import com.sokima.monopoly.model.player.Businessman;
 import com.sokima.monopoly.model.player.Player;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
 
+@Component
 public class RentEvent implements Event {
+
+    private static final Logger log = LoggerFactory.getLogger(RentEvent.class);
+
     /**
      * if player is owner of cell he doesn't pay
      * if owner is bank, player doesn't pay
@@ -31,19 +38,20 @@ public class RentEvent implements Event {
         }
 
         Long rent = onBusinessCell.getRent();
-        Long currentBalance = player.getBalance();
-        long newBalance = currentBalance - rent;
 
-        if (newBalance < 0) {
+        player.withdrawBalance(rent);
+        Long balanceAfterRent = player.getBalance();
+
+        if (balanceAfterRent < 0) {
             throw new LoseGameException();
         }
 
-        player.setBalance(newBalance);
+        ((Businessman) owner).topUpBalance(rent);
         printMessage(player);
     }
 
     @Override
     public void printMessage(Businessman player) {
-        System.out.printf("%s is paid a rent. Game is continuing..", player.getName());
+        log.info("{} is paid a rent. Game is continuing..", player.getName());
     }
 }

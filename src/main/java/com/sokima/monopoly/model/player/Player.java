@@ -20,7 +20,7 @@ public abstract class Player {
     /**
      * current user balance
      */
-    private Long balance;
+    protected Long balance = 0L;
 
     /**
      * business cell in own
