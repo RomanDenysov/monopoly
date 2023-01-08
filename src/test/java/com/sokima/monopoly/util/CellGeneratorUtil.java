@@ -1,8 +1,8 @@
 package com.sokima.monopoly.util;
 
-import com.sokima.monopoly.model.cell.Cell;
-import com.sokima.monopoly.model.cell.business.AirportBusiness;
-import com.sokima.monopoly.model.cell.business.BusinessCell;
+import com.sokima.monopoly.cell.Cell;
+import com.sokima.monopoly.cell.business.AirportBusiness;
+import com.sokima.monopoly.cell.business.BusinessCell;
 
 public final class CellGeneratorUtil {
 

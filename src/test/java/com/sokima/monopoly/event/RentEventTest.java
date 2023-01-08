@@ -1,8 +1,8 @@
 package com.sokima.monopoly.event;
 
 import com.sokima.monopoly.event.exception.EventException;
-import com.sokima.monopoly.model.cell.business.BusinessCell;
-import com.sokima.monopoly.model.player.Businessman;
+import com.sokima.monopoly.cell.business.BusinessCell;
+import com.sokima.monopoly.player.Businessman;
 import com.sokima.monopoly.util.CellGeneratorUtil;
 import com.sokima.monopoly.util.PlayerGeneratorUtil;
 import org.junit.jupiter.api.Test;

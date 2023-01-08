@@ -1,7 +1,7 @@
 package com.sokima.monopoly.util;
 
-import com.sokima.monopoly.model.player.Bank;
-import com.sokima.monopoly.model.player.Businessman;
+import com.sokima.monopoly.player.Bank;
+import com.sokima.monopoly.player.Businessman;
 
 public final class PlayerGeneratorUtil {
 

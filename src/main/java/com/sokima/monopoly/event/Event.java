@@ -1,9 +1,9 @@
 package com.sokima.monopoly.event;
 
 import com.sokima.monopoly.event.exception.EventException;
-import com.sokima.monopoly.model.cell.Cell;
-import com.sokima.monopoly.model.cell.event.EventCell;
-import com.sokima.monopoly.model.player.Businessman;
+import com.sokima.monopoly.cell.Cell;
+import com.sokima.monopoly.cell.event.EventCell;
+import com.sokima.monopoly.player.Businessman;
 import org.springframework.stereotype.Component;
 
 @Component

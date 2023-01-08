@@ -2,11 +2,11 @@ package com.sokima.monopoly.event;
 
 import com.sokima.monopoly.event.exception.LoseGameException;
 import com.sokima.monopoly.event.exception.RentException;
-import com.sokima.monopoly.model.cell.Cell;
-import com.sokima.monopoly.model.cell.business.BusinessCell;
-import com.sokima.monopoly.model.player.Bank;
-import com.sokima.monopoly.model.player.Businessman;
-import com.sokima.monopoly.model.player.Player;
+import com.sokima.monopoly.cell.Cell;
+import com.sokima.monopoly.cell.business.BusinessCell;
+import com.sokima.monopoly.player.Bank;
+import com.sokima.monopoly.player.Businessman;
+import com.sokima.monopoly.player.Player;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;

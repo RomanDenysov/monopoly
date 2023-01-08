@@ -1,7 +1,7 @@
 package com.sokima.monopoly.event;
 
-import com.sokima.monopoly.model.cell.Cell;
-import com.sokima.monopoly.model.player.Businessman;
+import com.sokima.monopoly.cell.Cell;
+import com.sokima.monopoly.player.Businessman;
 
 public class SalaryEvent implements Event {
 
