@@ -9,6 +9,8 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @ConfigurationProperties(prefix = "monopoly.cell.phone")
 public class PhoneCellConfiguration {
 
+    public static final Integer COUNT = 2;
+
     private FirstCompany firstCompany = new FirstCompany();
 
     private SecondCompany secondCompany = new SecondCompany();

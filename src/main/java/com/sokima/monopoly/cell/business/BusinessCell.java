@@ -1,6 +1,7 @@
 package com.sokima.monopoly.cell.business;
 
 import com.sokima.monopoly.cell.Cell;
+import com.sokima.monopoly.event.Event;
 import com.sokima.monopoly.event.RentEvent;
 import com.sokima.monopoly.player.Player;
 import lombok.Getter;
@@ -28,7 +29,7 @@ public abstract class BusinessCell extends Cell {
     /**
      * rent event to execute
      */
-    private RentEvent event;
+    private Event rentEvent;
 
     /**
      * identifier of businesses

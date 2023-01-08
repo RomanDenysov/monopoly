@@ -9,6 +9,8 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @ConfigurationProperties(prefix = "monopoly.cell.hostel")
 public class HostelCellConfiguration {
 
+    public static final Integer COUNT = 3;
+
     private FirstCompany firstCompany = new FirstCompany();
 
     private SecondCompany secondCompany = new SecondCompany();
