@@ -23,6 +23,8 @@ public class RentEvent implements Event {
      *
      * @param player the {@link Businessman}
      * @param onCell the {@link Cell} where player is staying
+     * @throws RentException occurs when are not possible to take rent from player
+     * @throws LoseGameException occurs when player balance is negative
      */
     @Override
     public void onEvent(Businessman player, Cell onCell) throws RentException, LoseGameException {
