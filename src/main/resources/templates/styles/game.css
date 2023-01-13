@@ -1,0 +1,196 @@
+/* Game elements */
+.game__board {
+    display: grid;
+    grid-template-columns: 125px repeat(9, 80px) 125px;
+    grid-template-rows: 125px repeat(9, 80px) 125px;
+    grid-gap: 2px;
+    margin: 50px auto;
+    width: 994px;
+    height: 994px;
+    background: #080808;
+    border: 2px solid #080808;
+}
+
+.cell__container {
+
+}
+
+.cell {
+    background: #fafaf8;
+    text-align: center;
+}
+
+.cell .cell__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    transform-origin: center;
+    height: 125px;
+    width: 80px;
+}
+
+.corner {
+
+}
+
+/*  Center and its elements  */
+.center__container {
+    grid-column: 2 / 11;
+    grid-row: 2 / 11;
+    background: #fafaf8;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.center__container__title {
+    grid-column: 1 / 9;
+    grid-row: 2;
+    font-size: 90px;
+    font-weight: 400;
+    letter-spacing: 12px;
+}
+
+/* TODO chat-bar (for event messages) */
+/* TODO user-bar (for money and color observing)*/
+
+/* Board rows (top, right, left, bottom)  */
+.row {
+    display: grid;
+    grid-gap: 2px;
+}
+
+.horizontal__row {
+    grid-template-columns: repeat(9, 80px);
+    grid-template-rows: 125px;
+}
+
+.vertical__row {
+    grid-template-columns: 125px;
+    grid-template-rows: repeat(9, 80px);
+}
+
+.vertical__row .cell__container {
+    top: 50%;
+    left: 50%;
+}
+
+.bottom__row {
+    grid-column: 2 / 11;
+    grid-row: 11;
+}
+
+.left__row {
+    grid-column: 1;
+    grid-row: 2 / 11;
+}
+
+.left__row .cell__container {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.top__row {
+    grid-column: 2 / 11;
+    grid-row: 1;
+}
+
+.top__row .cell__container {
+    transform: rotate(180deg);
+}
+
+.right__row {
+    grid-column: 11;
+    grid-row: 2 / 11;
+}
+
+.right__row .cell__container {
+    transform: translate(-50%, -50%) rotate(270deg);
+}
+
+/* text on cell */
+.cell .business__name {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.cell .event__name {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.cell .price {
+    font-size: 7px;
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+
+/* business cells */
+/*
+    types of business cells (differ only how tax gets)
+    1. Simple businesses (Social Media, Restaurant, ...)
+    2. Railroads
+    3. Casino
+*/
+.business {
+
+}
+
+.business .color__bar {
+    height: 25px;
+    border-bottom: 2px solid #080808;
+}
+
+.railroad {
+
+}
+
+.railroad .business__name {
+    padding-top: 10px;
+}
+
+.casino {
+
+}
+
+.casino .business__name {
+    padding-top: 10px;
+}
+
+
+/* event cells */
+/*
+    types of event cells:
+    1. Corner cells
+    2. Taxes
+    3. Chances
+*/
+.jackpot {
+
+}
+
+.jail {
+
+}
+
+.start {
+
+}
+
+.police {
+
+}
+
+.chance {
+
+}
+
+.chance .cell__container {
+    justify-content: center;
+}
+
+.tax {
+
+}
