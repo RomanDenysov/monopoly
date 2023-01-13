@@ -1,7 +1,5 @@
 package com.sokima.monopoly.util.dice;
 
-import com.sokima.monopoly.model.dice.Dice;
-
 import java.util.ArrayList;
 import java.util.List;
 

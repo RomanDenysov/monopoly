@@ -1,6 +1,6 @@
 package com.sokima.monopoly.util;
 
-import com.sokima.monopoly.model.dice.Dice;
+import com.sokima.monopoly.util.dice.Dice;
 
 import java.util.List;
 
